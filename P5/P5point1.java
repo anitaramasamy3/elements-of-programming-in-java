@@ -9,7 +9,7 @@ package P5;
  *
  * @author anita
  */
-public class P5point1 {
+public class P5point1 {//WAP to take an array A and index i into A,and rearranges such that all elements less that A[i] appear first,followed by elements equal to A[i] and then by elements greater
     public static int[] partition(int[] a,int p){
         int pivot=a[p];
         int t=0,s=0,e=0,l=a.length-1;//,last=a.length-1;
