@@ -9,7 +9,7 @@ package P4;
  *
  * @author anita
  */
-public class P4point7 {
+public class P4point7 {//WAP that takes double x and int y and returns x^y
     
     public static double power(double x, int y){
         double result=1.0;
