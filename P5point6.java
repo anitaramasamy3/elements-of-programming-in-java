@@ -13,12 +13,12 @@ import java.util.*;//ArrayList;
  */
 public class P5point6 {
     
-    public static double stockProfit(ArrayList<Integer>a){
+    public static double stockProfit(ArrayList<Integer>a){//WAP that takes an array of daily stocks and returns max profit that can be made by buying and then selling one share of that stock
         int size=a.size();
         double maxprof=0.0,minprice=Double.MAX_VALUE;
         for(int i=0;i<size;i++){
-            maxprof=Math.max(maxprof, a.get(i)-minprice);
-            minprice=Math.min(minprice, a.get(i));
+            maxprof=Math.max(maxprof, a.get(i)-minprice);//max difference is the profit 
+            minprice=Math.min(minprice, a.get(i));// maintain the min price
         }
         
         return maxprof;
