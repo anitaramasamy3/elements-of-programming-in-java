@@ -9,7 +9,7 @@
  * @author anita
  */
 public class P4point8 {
-    public static long findReverse(int n){
+    public static long findReverse(int n){//find reverse of integer
         long res=0;
         long num=n;
         while(num!=0){
