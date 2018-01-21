@@ -13,20 +13,20 @@ public class P4point7 {
     
     public static double power(double x, int y){
         double result=1.0;
-        long power=y;
-        if(y<0){
+        long power=y;//assuming y is a power of 2
+        if(y<0){//if y is negative
             power=-power;
             x=1.0/x;
         }
         while(power!=0){
             System.out.println("start power:"+power);
-            if((power&1)!=0){
+            if((power&1)!=0){//if lsb of y is 1
                 result*=x;
                 System.out.println("result:"+result);
             }
             
             x*=x;
-            power>>>=1;
+            power>>>=1;//1 right shift - decreases in power of 2 
             System.out.println("end power:"+power);
             System.out.println("x:"+x);
         }
