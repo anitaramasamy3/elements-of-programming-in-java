@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author anita
  */
-public class P5point12 {
+public class P5point12 {//wap to construct random subset of k elements from a given array
     public static ArrayList<Integer> randomGen (ArrayList<Integer> a,int k){
         Random gen=new Random();
         int n=a.size()-1;
