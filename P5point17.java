@@ -12,10 +12,10 @@ import java.util.*;
  * @author anita
  */
 public class P5point17 {//actually 5.18//5.17 incomplete
-    public static void spiraling(int[][] a,int n){
-        //int[] c=new int[n*n];
-        for(int i=0;i<Math.ceil(0.5*n);i++){
-            if(i==n-i-1)
+    public static void spiraling(int[][] a,int n){//spiral ordering of nxn 2d array
+        //int[] c=new int[n*n];//take 1st n-1 elements in 1s row,n-1 in last col,last n-1 row in reverse,last n-1 elements in 1st col in reverse column
+        for(int i=0;i<Math.ceil(0.5*n);i++){//next iteratively for (n-2)x(n-2) 2d array,(n-4)x(n-4) 2d array,etc
+            if(i==n-i-1)//varies for odd and even nxn elements
                 System.out.println(a[i][i]);
             for(int j=i;j<n-i-1;j++){
                 System.out.println(a[i][j]);
