@@ -8,7 +8,7 @@
  *
  * @author anita
  */
-public class P6point5 {
+public class P6point5 {//traverse string using two indices skipping non alphanumerical chars,performing case sensitivity testson alphanumeric chars
     public static boolean checkPalindrome(String s){
         boolean res=true;
         int i=0,j=s.length()-1;
@@ -17,7 +17,7 @@ public class P6point5 {
                 i++;
             while(!Character.isLetterOrDigit(s.charAt(j))&&i<j)
                 j--;
-            if(Character.toLowerCase(s.charAt(i++))!=Character.toLowerCase(s.charAt(j--)))
+            if(Character.toLowerCase(s.charAt(i++))!=Character.toLowerCase(s.charAt(j--)))//check converting both to lower case
                 return false;
         }
         
