@@ -8,9 +8,9 @@
  *
  * @author anita
  */
-public class P6point6 {
-    public static char[] reverseWords(String s){
-        char[] f=s.toCharArray();
+public class P6point6 {//reverse all words in a sentence
+    public static char[] reverseWords(String s){//reversing the sentence puts allwords in the right reverse order
+        char[] f=s.toCharArray();//reverse every word in the reversed sentence
         int size=f.length-1;
         f=reverse(f,0,size);
         int j=0;
