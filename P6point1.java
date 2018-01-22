@@ -8,7 +8,7 @@
  *
  * @author anita
  */
-public class P6point1 {
+public class P6point1 {//int to string and string to int conversion
     public static int stringToInt(String s){
         int neg=1;
         int j=0;
@@ -18,7 +18,7 @@ public class P6point1 {
             j++;
         }
         for(int i=j;i<s.length();i++){
-            final int dig=s.charAt(i)-'0';
+            final int dig=s.charAt(i)-'0';//convert to int
             res=res*10+dig;
         }
         
@@ -30,11 +30,11 @@ public class P6point1 {
         StringBuilder s=new StringBuilder();
         
         while(n!=0){
-            s.append((char)('0'+n%10));
+            s.append((char)('0'+n%10));//in reverse//convert to char from int
             n/=10;
         }
         if(a<0){
-            s.append('-');
+            s.append('-');// last char
         }
         s.reverse();
         System.out.println(s.toString());
